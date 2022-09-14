@@ -14,11 +14,11 @@
 <body id="back-color1">
     <section class="container p-5 d-flex flex-column justify-content-center align-items-center">
         <!-- header section -->
-        <section>
+        <section class="text-center">
             <h1>freeCodeCamp Survey Form</h1>
-            <p><i>Thank you for taking the time to help us improve the platform</i></p>
+            <h5><i>Thank you for taking the time to help us improve the platform</i></h5>
         </section>
-        <section id="back-color2" class="w-75 mx-5 rounded">
+        <form action="#" id="back-color2" class="w-75 mx-5 rounded">
             <div class=" py-4 px-5">
                 <h4>Name</h4>
                 <input type="text" class="form-control" aria-h3="Sizing example input"
@@ -36,18 +36,16 @@
             </div>
             <div class=" py-4 px-5">
                 <h5>Which option best describes your current role?</h5>
-                <div class="dropdown ms-auto">
-                    <button class="form-control bg-white dropdown-toggle text-start" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Select current role
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" type="button">Student</button></li>
-                        <li><button class="dropdown-item" type="button">Full Time Job</button></li>
-                        <li><button class="dropdown-item" type="button">Full Time Learner</button></li>
-                        <li><button class="dropdown-item" type="button">Prefer Not To Say</button></li>
-                        <li><button class="dropdown-item" type="button">Other</button></li>
-                    </ul>
+                <div>
+                    <select name="rol1" id="rol1" class="w-100 py-2">
+                        <option value="Select current role" class="bg-light">&nbsp;&nbsp;Select current role
+                        </option>
+                        <option value="Student">&nbsp;&nbsp;Student</option>
+                        <option value="Full Time Job">&nbsp;&nbsp;Full Time Job</option>
+                        <option value="Full Time Learner">&nbsp;&nbsp;Full Time Learner</option>
+                        <option value="Prefer Not Say">&nbsp;&nbsp;Prefer Not Say</option>
+                        <option value="Other">&nbsp;&nbsp;Other</option>
+                    </select>
                 </div>
             </div>
             <div class=" py-4 px-5">
@@ -72,20 +70,16 @@
                     </label>
                 </div>
             </div>
-            <div class=" py-4 px-5">
-                <h5>What is your favorite feature of freeCodeCamp?</h5>
-                <div class="dropdown ms-auto">
-                    <button class="form-control bg-white dropdown-toggle text-start" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Select current role
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" type="button">Student</button></li>
-                        <li><button class="dropdown-item" type="button">Full Time Job</button></li>
-                        <li><button class="dropdown-item" type="button">Full Time Learner</button></li>
-                        <li><button class="dropdown-item" type="button">Prefer Not To Say</button></li>
-                        <li><button class="dropdown-item" type="button">Other</button></li>
-                    </ul>
+            <div class="py-4 px-5">
+                <div>
+                    <h5>What is your favorite feature of freeCodeCamp?</h5>
+                    <select name="rol" id="rol" class="w-100 py-2">
+                        <option value="Select an option" class="bg-light">&nbsp;&nbsp;Select an option</option>
+                        <option value="Challenges">&nbsp;&nbsp;Challenges</option>
+                        <option value="Projects">&nbsp;&nbsp;Projects</option>
+                        <option value="Community">&nbsp;&nbsp;Community</option>
+                        <option value="Open Source">&nbsp;&nbsp;Open Source</option>
+                    </select>
                 </div>
             </div>
             <div class=" py-4 px-5">
@@ -178,7 +172,7 @@
                     <button id="btn-color" class="rounded-1 py-3 px-5 border-0" type="button">Submit</button>
                 </div>
             </div>
-        </section>
+        </form>
     </section>
 
 
